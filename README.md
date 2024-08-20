@@ -1,32 +1,68 @@
 ## Liste des paquets installés
 
-#### Lorem
+#### exa
+
 ```sh
-sudo apt install lipsum
+cargo install exa
 ```
 
-#### Lorem
+#### tlrc
+
 ```sh
-sudo apt install lipsum
+brew install tlrc
 ```
 
-#### Lorem
+#### bat
+
 ```sh
-sudo apt install lipsum
+sudo apt install bat
 ```
 
-#### Lorem
+#### thefuck
+
 ```sh
-sudo apt install lipsum
+brew install thefuck
 ```
 
-
-## Liste des fichier 
+#### atuin
 
 ```sh
-.lorem     #~/lorem/lipsum/.lorem 
-.lorem     #~/lorem/lipsum/.lorem 
-.lorem     #~/lorem/lipsum/.lorem 
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+atuin register -u raseraa -e raserarthur71@gmail.com
+```
+
+#### git-delta
+
+```sh
+sudo dpkg -i git-delta_0.18.0_amd64.deb
+```
+
+download `git-delta_0.18.0_amd64.deb`on [this link](https://github.com/dandavison/delta/releases/download/0.18.0/git-delta_0.18.0_amd64.deb)
+
+#### fzf
+
+```sh
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
+#### git-fuzzy
+
+```sh
+git clone https://github.com/bigH/git-fuzzy.git ~/.git-fuzzy
+```
+
+#### chezmoi
+
+```sh
+brew install chezmoi
+```
+
+## Liste des fichier
+
+```sh
+.bashrc                 #~/.bashrc
+.gitconfig              #~/.gitconfig
 ```
 
 ## Lien GitHub
