@@ -1,0 +1,157 @@
+
+#───────────────────────────────
+
+
+
+#$fill$status$time
+format = '''$battery$username$sudo$localip$ssh$directory$git_branch$git_state$git_status$c$java$python$nodejs$cmd_duration
+$character'''
+
+#TODO dans le format, mettre a la tout fin tout les truc, comme ca si un jour j'ai besoin il seront la et je verrai que je doit les changer
+#TODO et faire qqch pour avoir un jolie ls ll la
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+
+##################################################################################
+
+[battery]
+full_symbol = '🔋'
+charging_symbol = '⚡️'
+discharging_symbol = '⚠️ '
+empty_symbol = '💀'
+format = '[$symbol$percentage]($style) '
+disabled = false
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+
+##################################################################################
+
+[c]
+version_format = "${raw}"
+style = 'bold 149'
+format = '''[\[](normal)[$symbol]($style)[$version](149)[\] ](normal)'''
+
+##################################################################################
+
+[character]
+format ="$symbol"
+success_symbol = '[❯](bold green) '
+error_symbol = '[✗](bold red) '
+
+##################################################################################
+
+[cmd_duration]
+min_time = 2_000
+format = 'took [$duration ]($style)'
+
+##################################################################################
+
+[directory]
+format = '[$path]($style)[ $read_only]($read_only_style) '
+truncation_length = 0  
+truncate_to_repo = false
+style = 'bold cyan'
+before_repo_root_style = 'bold cyan'
+repo_root_style = 'bold #9e71f7'
+repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root$path]($repo_root_style)[$read_only]($read_only_style) '
+
+##################################################################################
+
+[git_branch]
+style = 'bold #FFAA00'
+format ='[$symbol$branch(:$remote_branch)]($style) '
+
+##################################################################################
+
+[git_state]
+style = 'bold #DA6000'
+
+##################################################################################
+
+# [git_metrics]
+# disabled = false
+
+##################################################################################
+
+[git_status]
+style = 'bold #f76410'
+format = '([\[$all_status$ahead_behind\]]($style) )'
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+
+##################################################################################
+
+[java]
+version_format = "${raw}"
+style = 'bold red'
+format = '''[\[](normal)[$symbol]()[$version](#bb0707)[\] ](normal)'''
+
+##################################################################################
+
+[localip]
+disabled = false
+
+##################################################################################
+
+[nodejs]
+version_format = "${raw}"
+style = 'bold bright-green'
+format = '''[\[](normal)[$symbol]($style)[$version](bright-green)[\] ](normal)'''
+
+##################################################################################
+
+[python]
+version_format = "${raw}"
+style = 'bold bright-yellow'
+format = '''[\[](normal)[$symbol]($style)[$version](bright-yellow)[ $virtualenv](bold #ffcd00)[\] ](normal)'''
+
+##################################################################################
+
+[status]
+disabled = false
+style = "#ff6f6f"
+format = '[\[$status\]]($style) '
+
+##################################################################################
+
+[sudo]
+disabled = false
+format = '[$symbol]($style)'
+symbol = "💪"
+
+##################################################################################
+
+[username]
+style_user = 'bold green '
+style_root = 'bold red'
+format = '[$user:]($style)'
+show_always = true
+
+##################################################################################
+
+[time]
+disabled = false
+style = '#5c6e99'
+format = '[$time]($style) '
+
+
+##################################################################################
+
+
+
+##################################################################################
+
+
+
+##################################################################################
+
+
+
+##################################################################################
+
