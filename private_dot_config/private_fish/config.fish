@@ -46,6 +46,9 @@ if status is-interactive
     alias fgb='__git_fzf_git_branch'
     alias fgs='__git_fzf_git_status'
 
+    alias rm='echo "rt is better to delete: "'
+    alias rt='trash-put --verbose'
+    alias trash-empty='Dangereux...'
 
 
     alias cat='batcat'
@@ -62,6 +65,7 @@ if status is-interactive
 
 
     set -x PATH "$HOME/.git-fuzzy/bin:$PATH"
+    set -x PATH "$HOME/.local/bin:$PATH"
 
     # Couleur de texte par défaut
     set fish_color_normal FFFFFF

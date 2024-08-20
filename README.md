@@ -58,6 +58,21 @@ brew install chezmoi
 cargo install lsd
 ```
 
+#### trash-cli
+
+```sh
+pipx install trash-cli
+```
+
+
+#### hollywook
+
+```sh
+sudo apt install -y hollywood
+```
+
+
+
 ## Liste des fichier
 
 ```sh
