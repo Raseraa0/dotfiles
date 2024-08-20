@@ -1,11 +1,5 @@
 ## Liste des paquets installés
 
-#### exa
-
-```sh
-cargo install exa
-```
-
 #### tlrc
 
 ```sh
@@ -58,11 +52,20 @@ git clone https://github.com/bigH/git-fuzzy.git ~/.git-fuzzy
 brew install chezmoi
 ```
 
+#### lsd
+
+```sh
+cargo install lsd
+```
+
 ## Liste des fichier
 
 ```sh
-.bashrc                 #~/.bashrc
-.gitconfig              #~/.gitconfig
+~/.bashrc
+~/.gitconfig
+~/.config/atuin/
+~/.config/lsd/
+~/.config/fish/
 ```
 
 ## Lien GitHub
