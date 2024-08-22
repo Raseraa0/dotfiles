@@ -40,17 +40,13 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-#### git-fuzzy
-
-```sh
-git clone https://github.com/bigH/git-fuzzy.git ~/.git-fuzzy
-```
+````
 
 #### chezmoi
 
 ```sh
 brew install chezmoi
-```
+````
 
 #### lsd
 
@@ -64,14 +60,11 @@ cargo install lsd
 pipx install trash-cli
 ```
 
-
-#### hollywook
+#### hollywood
 
 ```sh
 sudo apt install -y hollywood
 ```
-
-
 
 ## Liste des fichier
 
