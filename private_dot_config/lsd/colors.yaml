@@ -36,3 +36,5 @@ git-status:
   renamed: dark_green
   modified: dark_yellow
   conflicted: dark_red
+file:
+  README.md: yellow

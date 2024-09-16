@@ -30,6 +30,8 @@ color:
   # When "custom" is set, lsd will look in the config directory for `colors.yaml`.
   theme: custom
 
+
+
 # == Date ==
 # This specifies the date format for the date column. The freeform format
 # accepts a strftime like string.
