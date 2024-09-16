@@ -1,6 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    alias wo='cd ~/Documents/Travail/STAGE-AI'
+    alias wo='cd ~/Documents/Travail/3A/UPC'
     alias go='cd ~/Documents/Perso/porte_folio/raseraa0.github.io && code .' 
     alias temp='cd ~/Documents/temp && code .' 
 
@@ -13,7 +13,7 @@ if status is-interactive
     
     alias ccc='sudo update-alternatives --config '
     alias nb='npm run build'
-    alias rc='rm *.class'
+    alias rc='rt *.class'
 
     alias gs="git status"
     alias gu="git add -u"
@@ -56,15 +56,13 @@ if status is-interactive
     function fish_greeting
         echo (set_color --bold 09F)"Welcome to PowerShell :) the best shell for coding."(set_color normal)
     end
-    
+
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-    thefuck --alias | source
     atuin init fish --disable-up-arrow | source
     starship init fish | source
 
 
-    set -x PATH "$HOME/.git-fuzzy/bin:$PATH"
     set -x PATH "$HOME/.local/bin:$PATH"
 
     # Couleur de texte par défaut
