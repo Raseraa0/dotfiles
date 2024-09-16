@@ -17,6 +17,7 @@ sudo apt install bat
 ```sh
 brew install thefuck
 ```
+*Note: thefuck est pas ouf car cela utilise une version brew de python.*
 
 #### atuin
 
