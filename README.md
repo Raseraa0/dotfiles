@@ -41,19 +41,19 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-````
-
 #### chezmoi
 
 ```sh
 brew install chezmoi
-````
+```
 
-#### lsd
+#### eza
 
 ```sh
-cargo install lsd
+cargo install eza
 ```
+
+*Note: utilisation de eza a la place de lsd pour la customisation des couleurs.*
 
 #### trash-cli
 
@@ -75,6 +75,7 @@ sudo apt install -y hollywood
 ~/.config/atuin/
 ~/.config/lsd/
 ~/.config/fish/
+~/.config/eza/
 ```
 
 ## Lien GitHub
