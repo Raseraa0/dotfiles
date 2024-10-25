@@ -25,21 +25,21 @@ if status is-interactive
     alias gd="git diff"
     alias gsw='git_switch_branch'
 
-    alias ll='lsd -l'
-    alias la='lsd -A'
-    alias lla='lsd -lA'
-    alias l='lsd'
-    alias ls='lsd'
-    alias lt='lsd --tree --depth '
-    alias lta='lsd -A --tree --depth '
+    alias lsdll='lsd -l'
+    alias lsdla='lsd -A'
+    alias lsdlla='lsd -lA'
+    alias lsdl='lsd'
+    alias lsdls='lsd'
+    alias lsdlt='lsd --tree --depth '
+    alias lsdlta='lsd -A --tree --depth '
 
-    # alias l='exa --icons'
-    # alias ls='exa --icons'
-    # alias ll='exa -lgh --icons --git'
-    # alias la='exa -a --icons'
-    # alias lla='exa -lgha --icons --git'
-    # alias lt='exa --icons --tree --level '
-    # alias lta='exa -a --icons --tree --level '
+    alias l='eza --icons'
+    alias ls='eza --icons'
+    alias ll='eza -lgh --icons --git'
+    alias la='eza -a --icons'
+    alias lla='eza -lgha --icons --git'
+    alias lt='eza --icons --tree --level '
+    alias lta='eza -a --icons --tree --level '
 
 
     alias lll='fzf --preview "batcat --style=numbers --color=always --line-range :500 {}"'
@@ -50,8 +50,12 @@ if status is-interactive
     alias rt='trash-put --verbose'
     alias trash-empty='Dangereux...'
 
+    alias mz='minizinc'
+    alias mzide='/home/arthur/Documents/Travail/3A/UPC/CPP/MiniZincIDE-2.8.6-bundle-linux-x86_64/MiniZincIDE.sh'
 
     alias cat='batcat'
+
+    alias ci="conda_init"
 
     function fish_greeting
         echo (set_color --bold 09F)"Welcome to PowerShell :) the best shell for coding."(set_color normal)
@@ -64,6 +68,9 @@ if status is-interactive
 
 
     set -x PATH "$HOME/.local/bin:$PATH"
+
+    set -x EZA_CONFIG_DIR "$HOME/.config/eza"
+
 
     # Couleur de texte par défaut
     set fish_color_normal FFFFFF
@@ -169,3 +176,17 @@ function git_switch_branch
     end
 end
 
+function conda_init
+    # >>> conda initialize >>>
+    # !! Contents within this block are managed by 'conda init' !!
+    if test -f /home/arthur/anaconda3/bin/conda
+        eval /home/arthur/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    else
+        if test -f "/home/arthur/anaconda3/etc/fish/conf.d/conda.fish"
+            . "/home/arthur/anaconda3/etc/fish/conf.d/conda.fish"
+        else
+            set -x PATH "/home/arthur/anaconda3/bin" $PATH
+        end
+    end
+    # <<< conda initialize <<<
+end

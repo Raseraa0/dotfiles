@@ -4,7 +4,7 @@
 
 
 #$fill$status$time
-format = '''$battery$username$sudo$localip$ssh$directory$git_branch$git_state$git_status$c$java$python$nodejs$cmd_duration
+format = '''$battery$username$sudo$localip$ssh$directory$git_branch$git_state$git_status$c$java$python$nodejs$cmd_duration$conda
 $character'''
 
 #TODO dans le format, mettre a la tout fin tout les truc, comme ca si un jour j'ai besoin il seront la et je verrai que je doit les changer
@@ -16,6 +16,8 @@ disabled = true
 
 
 ##################################################################################
+
+
 
 [battery]
 full_symbol = '🔋'
@@ -110,6 +112,13 @@ format = '''[\[](normal)[$symbol]($style)[$version](bright-green)[\] ](normal)''
 version_format = "${raw}"
 style = 'bold bright-yellow'
 format = '''[\[](normal)[$symbol]($style)[$version](bright-yellow)[ $virtualenv](bold #ffcd00)[\] ](normal)'''
+
+##################################################################################
+
+[conda]
+truncation_length = 0
+ignore_base = false
+format = '''[\[](normal)[$symbol$environment](dimmed #ecff00)[\] ](normal)'''
 
 ##################################################################################
 
