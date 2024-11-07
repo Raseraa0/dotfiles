@@ -1,20 +1,24 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+
+    ### ============== My alias ============== ###
+
+    # ======== Shortcut Directory
+    ##==================================##
     alias wo='cd ~/Documents/Travail/3A/UPC'
     alias go='cd ~/Documents/Perso/porte_folio/raseraa0.github.io && code .' 
     alias temp='cd ~/Documents/temp && code .' 
+    ##==================================##
 
+
+    # ======== No comment
+    ##==================================##
     alias mariettecaca='echo "Mariette est vraiment un petit caca" && open ~/.mariette/.labg/.delaterreentiere/kiki.txt'
+    ##==================================##
 
-    alias maj='sudo apt-get upgrade -y && sudo apt-get update -y'
-    alias dup='gnome-terminal .'
-    alias b='cd ..'
-    alias sss='ssh raseraa@pcserveur.ensimag.fr -XKC'
-    
-    alias ccc='sudo update-alternatives --config '
-    alias nb='npm run build'
-    alias rc='rt *.class'
 
+    # ======== My git alias
+    ##==================================##
     alias gs="git status"
     alias gu="git add -u"
     alias gc="git commit"
@@ -24,7 +28,13 @@ if status is-interactive
     alias gsh="git push"
     alias gd="git diff"
     alias gsw='git_switch_branch'
+    alias fgb='__git_fzf_git_branch'
+    alias fgs='__git_fzf_git_status'
+    ##==================================##
 
+
+    # ======== Old ls alias
+    ##==================================##
     alias lsdll='lsd -l'
     alias lsdla='lsd -A'
     alias lsdlla='lsd -lA'
@@ -32,46 +42,76 @@ if status is-interactive
     alias lsdls='lsd'
     alias lsdlt='lsd --tree --depth '
     alias lsdlta='lsd -A --tree --depth '
+    ##==================================##
 
+
+    # ======== My ls alias
+    ##==================================##
     alias l='eza --icons'
     alias ls='eza --icons'
     alias ll='eza -lgh --icons --git'
+    alias llc='eza -lgh --icons --git --sort=modified --reverse'
     alias la='eza -a --icons'
     alias lla='eza -lgha --icons --git'
     alias lt='eza --icons --tree --level '
     alias lta='eza -a --icons --tree --level '
-
-
     alias lll='fzf --preview "batcat --style=numbers --color=always --line-range :500 {}"'
-    alias fgb='__git_fzf_git_branch'
-    alias fgs='__git_fzf_git_status'
+    ##==================================##
 
+
+    # ======== Application
+    ##==================================##
+    alias mz='minizinc'
+    alias mzide='/home/arthur/Documents/Travail/3A/UPC/CPP/MiniZincIDE-2.8.6-bundle-linux-x86_64/MiniZincIDE.sh'
+    ##==================================##
+
+
+    # ======== Override of rm
+    ##==================================##
     alias rm='echo "rt is better to delete: "'
     alias rt='trash-put --verbose'
     alias trash-empty='Dangereux...'
+    ##==================================##
 
-    alias mz='minizinc'
-    alias mzide='/home/arthur/Documents/Travail/3A/UPC/CPP/MiniZincIDE-2.8.6-bundle-linux-x86_64/MiniZincIDE.sh'
 
+    # ======== Useful 
+    ##==================================##
     alias cat='batcat'
-
+    alias rc='rt *.class'
+    alias maj='sudo apt-get upgrade -y && sudo apt-get update -y'
+    alias dup='gnome-terminal .'
+    alias b='cd ..'
+    alias sss='ssh raseraa@pcserveur.ensimag.fr -XKC'
+    alias ccc='sudo update-alternatives --config '
+    alias nb='npm run build'
     alias ci="conda_init"
+    ##==================================##
 
+
+    ## ==== Welcome message
     function fish_greeting
         echo (set_color --bold 09F)"Welcome to PowerShell :) the best shell for coding."(set_color normal)
     end
 
+    ## ==== Load homebrew
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-    atuin init fish --disable-up-arrow | source
+    ## ==== Load starship 
     starship init fish | source
 
+    ## ==== Atuin diseable up arrow
+    atuin init fish --disable-up-arrow | source
 
+    ## ==== Set env
     set -x PATH "$HOME/.local/bin:$PATH"
 
+    ## ==== Set eza env
     set -x EZA_CONFIG_DIR "$HOME/.config/eza"
 
 
+    #### ===================================================== #### 
+    #### ====================Fish color======================= #### 
+    #### ===================================================== #### 
     # Couleur de texte par défaut
     set fish_color_normal FFFFFF
 
@@ -146,16 +186,17 @@ if status is-interactive
 
     set fish_pager_color_selected_background --background=4a486d
 
+    #### ===================================================== #### 
+    #### ===================================================== #### 
+    #### ===================================================== #### 
+
 
 end
 
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#################################### FONCTION TIME #################################### 
 
 
-#################################### FISH TIME #################################### 
-
-
-
+## ==== Git switch with fzf
 function git_switch_branch
     if test -d ".git"
         set -l selected_remote_branch (git branch -r | fzf --height 40% | string trim)
@@ -176,6 +217,7 @@ function git_switch_branch
     end
 end
 
+## ==== Dynamique conda init
 function conda_init
     # >>> conda initialize >>>
     # !! Contents within this block are managed by 'conda init' !!

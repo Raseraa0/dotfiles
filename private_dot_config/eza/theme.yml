@@ -119,8 +119,8 @@ filenames:
     }
   index.html:
     {
-      filename: { foreground: "#0023ff", is_bold: true, is_underline: true },
-      icon: {style: {foreground: "#0023ff"} }
+      filename: { foreground: "#f984ff", is_bold: true, is_underline: true },
+      icon: {style: {foreground: "#f984ff"} }
     }
   __init__.py:
     {
@@ -136,7 +136,24 @@ filenames:
     {
       filename: { foreground: "#68d372", is_bold: true, is_underline: true },
       icon: {style: {foreground: "#68d372"} }
-    }  
+    } 
+  todo:
+    {
+      filename: { foreground: "#a40000", is_bold: true, is_underline: true },
+      icon: {style: {foreground: "#a40000"} }
+    } 
+  todo.md:
+    {
+      filename: { foreground: "#a40000", is_bold: true, is_underline: true },
+      icon: {style: {foreground: "#a40000"} }
+    }
+  todo.txt:
+    {
+      filename: { foreground: "#a40000", is_bold: true, is_underline: true },
+      icon: {style: {foreground: "#a40000"} }
+    }
+  
+   
   
       
 extensions:
@@ -259,8 +276,8 @@ extensions:
     }
   html:
     {
-      filename: { foreground: "#0023ff", is_bold: true },
-      icon: {style: {foreground: "#0023ff"} }
+      filename: { foreground: "#f984ff", is_bold: true },
+      icon: {style: {foreground: "#f984ff"} }
     }
   css:
     {

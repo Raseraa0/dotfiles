@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export LS_COLORS:di\x3d34\x3aln\x3d35\x3aso\x3d32\x3api\x3d33\x3aex\x3d31\x3abd\x3d34\x3b46\x3acd\x3d34\x3b43\x3asu\x3d30\x3b41\x3asg\x3d30\x3b46\x3atw\x3d30\x3b42\x3aow\x3d30\x3b43
+SETUVAR --export LS_COLORS:reset\x3a\x2a\x2etxt\x3d31
 SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:7669a2
 SETUVAR fish_color_cancel:fffb00
@@ -32,4 +32,4 @@ SETUVAR fish_pager_color_completion:c5ffd3
 SETUVAR fish_pager_color_description:f9e4a7
 SETUVAR fish_pager_color_prefix:29f49a
 SETUVAR fish_pager_color_progress:ff875d
-SETUVAR fish_user_paths:/home/arthur/\x2ecargo/bin\x1e/home/arthur/\x2efzf/bin
+SETUVAR fish_user_paths:/home/arthur/\x2ecargo/bin\x1e/home/arthur/\x2efzf/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin\x1e/home/arthur/anaconda3/bin
