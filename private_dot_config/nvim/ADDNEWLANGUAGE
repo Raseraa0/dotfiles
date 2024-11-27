@@ -1,0 +1,8 @@
+Si je veux ajouter un nouveau langague, les étapes sont les suivante:
+
+- Ajouter le serveur de langague dans lsp/mason.lua
+- Ajouter linter et formater dans lsp/mason.lua
+- Ajouter si besoin la config de se serveur dans lsp/lspconfig.lua
+- Ajouter la précision du formatter utilisé dans formatting.lua
+- Ajouter la précision du linter utilisé dans linting.lua
+

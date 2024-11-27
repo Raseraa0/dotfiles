@@ -12,13 +12,6 @@ brew install tlrc
 sudo apt install bat
 ```
 
-#### thefuck
-
-```sh
-brew install thefuck
-```
-*Note: thefuck est pas ouf car cela utilise une version brew de python.*
-
 #### atuin
 
 ```sh
@@ -59,12 +52,6 @@ cargo install eza
 
 ```sh
 pipx install trash-cli
-```
-
-#### hollywood
-
-```sh
-sudo apt install -y hollywood
 ```
 
 ## Liste des fichier
