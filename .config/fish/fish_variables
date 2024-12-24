@@ -1,0 +1,35 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export LS_COLORS:reset\x3a\x2a\x2etxt\x3d31
+SETUVAR __fish_initialized:3400
+SETUVAR fish_color_autosuggestion:69707A
+SETUVAR fish_color_cancel:fffb00
+SETUVAR fish_color_command:00bdff
+SETUVAR fish_color_comment:d3f7f5
+SETUVAR fish_color_cwd:FD6C9E
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:dc9a00
+SETUVAR fish_color_error:ff0000
+SETUVAR fish_color_escape:00ffae
+SETUVAR fish_color_history_current:FD6C9E
+SETUVAR fish_color_host:FD6C9E
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_normal:FFFFFF
+SETUVAR fish_color_operator:00c10f
+SETUVAR fish_color_param:00ffec
+SETUVAR fish_color_quote:79ff71
+SETUVAR fish_color_redirection:ffb814
+SETUVAR fish_color_search_match:FD6C9E
+SETUVAR fish_color_selection:FD6C9E
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:FD6C9E
+SETUVAR fish_color_valid_path:00e2b2
+SETUVAR fish_greeting:Welcome\x20to\x20Powershell
+SETUVAR fish_greeting_color:blue
+SETUVAR fish_greeting_style:bold
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:c5ffd3
+SETUVAR fish_pager_color_description:f9e4a7
+SETUVAR fish_pager_color_prefix:29f49a
+SETUVAR fish_pager_color_progress:ff875d
+SETUVAR fish_user_paths:/home/arthur/\x2ecargo/bin\x1e/home/arthur/\x2efzf/bin\x1e/home/arthur/anaconda3/bin

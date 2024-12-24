@@ -1,0 +1,52 @@
+Je garde ici mes raccourci custom:
+
+
+-- NvimTree --
+Space e ..
+
+-- FuzzyFind --
+Space f ..
+
+-- Tabs --
+Space t ..
+Ctrl [h/j/k/l] for moving
+
+-- Windows
+Space s ..
+
+-- Movement --
+é
+à
+
+-- Diseable hightlight from search --
+Space n h
+
+-- Substitution --
+s "motion" 
+
+-- "{[( intelligent --
+ys "motion" "caractere" ex: ysiw"
+ds
+cs
+
+-- Comment --
+gc ..
+
+-- Pour le lsp --
+faire :Mason pour vore ce qu'il y a d'installé
+sinon check dans le code les raccourci (g + .. / K / leader + ... /...)
+
+-- Trouble --
+x + qqch
+
+-- format text --
+space m p
+
+-- message d'erreur --
+space l ..
+
+-- run le code --
+space c r ...
+
+-- clear les notification --
+space n d

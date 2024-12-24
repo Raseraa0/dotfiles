@@ -1,0 +1,4 @@
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# AllowShortFunctionsOnASingleLine: None
