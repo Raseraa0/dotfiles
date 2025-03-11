@@ -1,0 +1,154 @@
+{
+  "editor.semanticTokenColorCustomizations": {
+    "[Default Dark+]": {
+      "rules": {
+        "property.mandatory:xml": {
+          "bold": true
+        },
+        "string.i18n:xml": {
+          "italic": true
+        }
+      }
+    },
+    "[Default Light+]": {
+      "rules": {
+        "property.mandatory:xml": {
+          "bold": true
+        },
+        "string.i18n:xml": {
+          "italic": true
+        }
+      }
+    },
+    "[Default High Contrast]": {
+      "rules": {
+        "property.mandatory:xml": {
+          "bold": true
+        },
+        "string.i18n:xml": {
+          "italic": true
+        }
+      }
+    }
+
+  },
+  "editor.minimap.enabled": false,
+  //===========================  VIM TIME ==================================//
+  //===========================  VIM TIME ==================================//
+  //===========================  VIM TIME ==================================//
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      //exit insert mode
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "é"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "à"
+      ],
+      "after": [
+        "1",
+        "0",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "é"
+      ],
+      "after": [
+        "d",
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "d",
+        "à"
+      ],
+      "after": [
+        "d",
+        "1",
+        "0",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "?"
+      ],
+      "commands": [
+        "actions.find"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "c",
+        "c",
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "c",
+        "u",
+      ],
+      "commands": [
+        "editor.action.removeCommentLine"
+      ]
+    },
+  ],
+  //===========================  OVER ==================================//
+  //===========================  OVER ==================================//
+  //===========================  OVER ==================================//
+  "workbench.colorTheme": "Aura Soft Dark (Soft Text)",
+  "workbench.iconTheme": "helium-icon-theme",
+  "editor.lineNumbers": "relative",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.enableNeovim": true,
+  "abapfs.remote": {
+    "S54": {
+      "url": "http://slnxsapides07.marc.fr.ssg:8000/",
+      "username": "ARASERA",
+      "password": "",
+      "client": "800",
+      "language": "EN",
+      "allowSelfSigned": true
+    },
+    "S51": {
+      "url": "http://slnxsaps4h17.marc.fr.ssg:50001/",
+      "username": "ARASERA",
+      "password": "",
+      "client": "100",
+      "language": "EN",
+      "allowSelfSigned": true
+    }
+  }
+}
