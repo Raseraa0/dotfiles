@@ -30,7 +30,6 @@
         }
       }
     }
-
   },
   "editor.minimap.enabled": false,
   //===========================  VIM TIME ==================================//
@@ -123,11 +122,30 @@
       ]
     },
   ],
-  //===========================  OVER ==================================//
-  //===========================  OVER ==================================//
-  //===========================  OVER ==================================//
-  "workbench.colorTheme": "Aura Soft Dark (Soft Text)",
+   "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "g",
+        "c",
+        "c",
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "c",
+        "u",
+      ],
+      "commands": [
+        "editor.action.removeCommentLine"
+      ]
+    },
+   ],
   "workbench.iconTheme": "helium-icon-theme",
+  "worbench.iconTheme": "helium-icon-theme",
   "editor.lineNumbers": "relative",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -150,5 +168,27 @@
       "language": "EN",
       "allowSelfSigned": true
     }
-  }
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.preferredDarkColorTheme": "Noctis Uva",
+  "workbench.preferredLightColorTheme": "Noctis Lux",
+  "workbench.colorTheme": "Noctis Lux"
 }

@@ -1,0 +1,129 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "alt+h",
+        "command": "-gitlens.showQuickFileHistory",
+        "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "alt+h",
+        "command": "-testing.toggleTestingPeekHistory",
+        "when": "testing.isPeekVisible"
+    },
+    {
+        "key": "alt+h",
+        "command": "-editor.action.accessibilityHelpOpenHelpLink",
+        "when": "accessibilityHelpIsShown"
+    },
+    {
+        "key": "alt+h",
+        "command": "extension.git-file-history"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "gitlens.toggleFileChanges"
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+numpad2",
+        "command": "workbench.action.toggleLightDarkThemes"
+    },
+    {
+        "key": "ctrl+numpad3",
+        "command": "errorLens.toggle"
+    },
+    {
+        "key": "ctrl+numpad4",
+        "command": "editor.action.sourceAction"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+g g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "ctrl+k ctrl+n",
+        "command": "-git.unstageSelectedRanges",
+        "when": "isInDiffEditor && !operationInProgress"
+    },
+    {
+        "key": "ctrl+k ctrl+n",
+        "command": "notifications.clearAll"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.selectToBracket"
+    },
+    {
+        "key": "ctrl+numpad5",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "-workbench.action.keybindingsReference"
+    },
+    {
+        "key": "ctrl+k ctrl+r",
+        "command": "-git.revertSelectedRanges",
+        "when": "isInDiffEditor && !operationInProgress"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "-editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "livePreview.start.internalPreview.atFile"
+    },
+    {
+        "key": "ctrl+k ctrl+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalHasBeenCreated || terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+k ctrl+b",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+n ctrl+p",
+        "command": "notebook.cell.insertCodeCellBelow",
+        "when": "notebookEditable && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+    },
+    {
+        "key": "ctrl+n ctrl+m",
+        "command": "notebook.cell.insertMarkdownCellBelow",
+        "when": "config.notebook.globalToolbarShowLabel && notebookEditable && config.notebook.globalToolbarShowLabel != 'never' && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+    }
+]

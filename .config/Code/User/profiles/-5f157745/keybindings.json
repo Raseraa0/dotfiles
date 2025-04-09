@@ -73,17 +73,23 @@
     "when": "vim.mode == 'Normal' && editorTextFocus && foldersViewVisible",
     "command": "workbench.action.toggleSidebarVisibility"
   },
+
+  {
+    "key": "space e c",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "sideBarFocus && !inputFocus"
+  },
   /* ======================== */
   // Gestion des splits (Éditeurs multiples)
   /* ======================== */
   // Diviser l'écran horizontalement et verticalement
   {
-    "key": "space s h",
+    "key": "space s v",
     "command": "workbench.action.splitEditor",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
-    "key": "space s v",
+    "key": "space s h",
     "command": "workbench.action.splitEditorDown",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
@@ -206,19 +212,19 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
   },
   {
-     "key": "c",
+    "key": "c",
     "command": "filesExplorer.copy",
-    "when": "filesExplorerFocus"
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
   },
   {
     "key": "p",
     "command": "filesExplorer.paste",
-    "when": "filesExplorerFocus"
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
   },
   {
     "key": "d",
     "command": "deleteFile",
-    "when": "filesExplorerFocus"
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
   },
   /* ======================== */
   // Formatage & Sauvegarde
@@ -270,12 +276,56 @@
   },
   {
     "key": "space e p ",
-    "command":"workbench.action.showCommands",
+    "command": "workbench.action.showCommands",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
     "key": "space e j",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "vim.mode == 'Normal' && editorTextFocus || terminalFocus"
-}
+  },
+  {
+    "key": "space s r",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space s l",
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space k t",
+    "command": "workbench.action.toggleLightDarkThemes",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+   "key": "space r r",
+    "command": "workbench.action.reloadWindow",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "space z",
+    "command": "editor.action.toggleWordWrap",
+    "when": "vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "alt+z",
+    "command": "-editor.action.toggleWordWrap"
+  },
+  {
+    "key": "space v v",
+    "command": "overleaf-workshop.compileManager.viewPdf",
+    "when": "vim.mode != 'Insert' && editorTextFocus && ( overleaf-workshop.activateCompile && resourceExtname == '.tex' || resourceExtname == '.tex' && resourceScheme == 'overleaf-workshop')"
+  },
+  {
+    "key": "space v c",
+    "command": "overleaf-workshop.compileManager.compile",
+    "when": "vim.mode != 'Insert' && editorTextFocus && ( overleaf-workshop.activateCompile && resourceExtname == '.tex' || resourceExtname == '.tex' && resourceScheme == 'overleaf-workshop')"
+  }
 ]
