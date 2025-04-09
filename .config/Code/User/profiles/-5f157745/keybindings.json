@@ -34,12 +34,6 @@
     "key": "ctrl-j",
     "command": "workbench.action.navigateDown"
   },
-  // Afficher tous les éditeurs ouverts
-  {
-    "key": "space ,",
-    "command": "workbench.action.showAllEditors",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-  },
   /* ======================== */
   // Gestion de la barre latérale (Explorer)
   /* ======================== */
@@ -73,11 +67,10 @@
     "when": "vim.mode == 'Normal' && editorTextFocus && foldersViewVisible",
     "command": "workbench.action.toggleSidebarVisibility"
   },
-
   {
     "key": "space e c",
     "command": "workbench.files.action.collapseExplorerFolders",
-    "when": "sideBarFocus && !inputFocus"
+    "when": "(sideBarFocus && !inputFocus) || (vim.mode == 'Normal' && editorTextFocus && foldersViewVisible)"
   },
   /* ======================== */
   // Gestion des splits (Éditeurs multiples)
@@ -232,7 +225,7 @@
   {
     "key": "space m p",
     "command": "editor.action.formatDocument",
-    "when": "vim.mode != 'Insert' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "key": "space s s",
@@ -247,7 +240,7 @@
   {
     "key": "space s t",
     "command": "workbench.action.openPreviousEditorFromHistory",
-    "when": "vim.mode != 'Insert' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "key": "x",
@@ -277,7 +270,7 @@
   {
     "key": "space e p ",
     "command": "workbench.action.showCommands",
-    "when": "vim.mode == 'Normal' && editorTextFocus"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "key": "space e j",
@@ -295,12 +288,37 @@
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
+    "key": "space s u",
+    "command": "workbench.action.moveEditorToAboveGroup",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space s d",
+    "command": "workbench.action.moveEditorToBelowGroup",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space s j",
+    "command": "workbench.action.increaseViewSize",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space s k",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space s o",
+    "command": "workbench.action.evenEditorWidths",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
     "key": "space k t",
     "command": "workbench.action.toggleLightDarkThemes",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
-   "key": "space r r",
+    "key": "space r r",
     "command": "workbench.action.reloadWindow",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
@@ -327,5 +345,5 @@
     "key": "space v c",
     "command": "overleaf-workshop.compileManager.compile",
     "when": "vim.mode != 'Insert' && editorTextFocus && ( overleaf-workshop.activateCompile && resourceExtname == '.tex' || resourceExtname == '.tex' && resourceScheme == 'overleaf-workshop')"
-  }
+  },
 ]
