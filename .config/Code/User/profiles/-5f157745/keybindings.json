@@ -279,7 +279,13 @@
   },
   {
     "key": "space e j",
-    "command": "workbench.action.terminal.kill",
+    "command": "workbench.action.togglePanel",
+    // "args": {
+    //   "commands": [
+    //     "workbench.action.terminal.focus",
+    //     "workbench.action.terminal.toggleTerminal",
+    //   ],
+    // },
     "when": "vim.mode == 'Normal' && editorTextFocus && view.terminal.visible"
   },
   {
