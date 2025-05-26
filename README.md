@@ -1,4 +1,18 @@
-## Tout simplement mes dotfiles :)
+<p align="center">
+  <a href="https://github.com/Raseraa0">
+   🏠 Go back to my GitHub home page 🏠 
+  </a>
+</p>
 
-- Move corresponding files into this directory (with same path)
-- Do `stow .` to generate similink
+---
+
+# 📌 DotFiles
+
+Simply my dotfiles using `stow` commande line. :)
+
+---
+<p align="center">
+  <a href="https://github.com/Raseraa0">
+   🏠 Go back to my GitHub home page 🏠 
+  </a>
+</p>
