@@ -357,4 +357,64 @@
     "command": "overleaf-workshop.compileManager.compile",
     "when": "vim.mode != 'Insert' && editorTextFocus && ( overleaf-workshop.activateCompile && resourceExtname == '.tex' || resourceExtname == '.tex' && resourceScheme == 'overleaf-workshop')"
   },
+  {
+    "key": "space c q",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly && vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "ctrl+oem_period",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "space m m",
+    "command": "editor.action.toggleMinimap",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space x x",
+    "command": "workbench.view.extensions",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "-workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+u",
+    "command": "editor.action.transformToUppercase",
+    "when": "vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "editor.action.transformToLowercase",
+    "when": "vim.mode != 'Insert' && editorTextFocus"
+  },
+  {
+    "key": "space h h",
+    "command": "highlight.forceDecorate",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
+  }
 ]
